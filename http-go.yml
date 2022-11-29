@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://localhost:8080
+functions:
+  http-go:
+    lang: golang-http
+    handler: ./http-go
+    image: nhutnguyen01/http-go:latest
+        
